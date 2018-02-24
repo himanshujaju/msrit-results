@@ -30,7 +30,7 @@ else
 	
 	$f=$f.$x;
 	
- $url = file_get_contents('http://result.msrit.edu/sresult.php?myusn=1MS'.$year.$branch.$f);
+ $url = file_get_contents('http://exam.msrit.edu/index.php?myusn=1MS'.$year.$branch.$f);
  $url = htmlentities($url);
  $url = substr($url,strpos($url,"Name:")+6);
  $name = substr($url,0,strpos($url,"&l"));
